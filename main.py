@@ -12,3 +12,7 @@ phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
 # save the searched string in match_object variable
 match_object = phone_num_regex.search(some_string_with_ph_num)
+
+# use group() for actual text from match_object
+# print the results
+print(match_object.group())
