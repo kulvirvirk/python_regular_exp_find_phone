@@ -1,6 +1,9 @@
 # 1. use regex - find a valid phone number from a given string
+# 2. use regex to find a word that starts with 'Bat' from a given string
+# note: use a pipe to separate the options
 
 
+# 1. use regex - find a valid phone number from a given string
 # Import the re module
 import re
 
@@ -15,4 +18,11 @@ match_object = phone_num_regex.search(some_string_with_ph_num)
 
 # use group() for actual text from match_object
 # print the results
+print(match_object.group())
+print('=====================================')
+
+
+# 2. use regex to find a word that starts with 'Bat' from a given string
+bat_regex = re.compile(r'Bat(man|mobile|copter)')
+match_object = bat_regex.search('Batmobile lost a wheel!')
 print(match_object.group())
