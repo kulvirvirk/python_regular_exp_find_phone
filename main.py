@@ -37,3 +37,7 @@ print('=====================================')
 # create a regex 
 phone_regex = re.compile('(\d\d\d-)?\d\d\d-\d\d\d\d')
 match_object_1 = phone_regex.search(some_string_with_ph_num)
+match_object_2 = phone_regex.search('Hey, call me on 555-6262!')
+
+print(match_object_1.group())
+print(match_object_2.group())
